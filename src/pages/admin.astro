@@ -15,11 +15,14 @@ const url = Astro.site;
 
 const config = {
   locale: lang,
-  site_url: url,
+  site_url: ohiointerests.netlify.app,
   logo_url: "https://starfunnel.unfolding.io/logo.svg",
   local_backend: true,
   backend: {
-    name: "test-repo",
+    name: "github",
+    repo: "jordolang/StarFunnel",
+    branch: "master",
+    base_url: "https://ohiointerests.netlify.app",
   },
   search: true,
   media_folder: "src/assets",
